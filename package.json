@@ -11,7 +11,7 @@
   "devDependencies": {
     "cucumber": "^0.10.2",
     "cucumber-html-report": "^0.4.4",
-    "cucumber-html-reporter": "^0.3.9",
+    "cucumber-html-reporter": "^0.3.1",
     "cucumber-junit": "^1.6.0",
     "gulp": "^3.9.1",
     "gulp-cucumber": "0.0.22",

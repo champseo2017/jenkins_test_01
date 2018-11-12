@@ -3,8 +3,6 @@
 var fs = require('fs');
 var webdriver = require('selenium-webdriver');
 var platform = process.env.PLATFORM || "CHROME" || "FIREFOX";
-var reporter = require('cucumber-html-reporter');
-var cucumberJunit = require('cucumber-junit');
 
 var buildAndroidDriver = function() {
 	return new webdriver.Builder().
@@ -47,7 +45,7 @@ var getDriver = function() {
 
 var World = function World() {
 
-	var defaultTimeout = 300000;
+	var defaultTimeout = 20000;
 	var screenshotPath = "screenshots";
 
 	this.webdriver = webdriver;
@@ -64,7 +62,6 @@ var World = function World() {
 		}, waitTimeout);
 	};
 };
-
 
 module.exports.World = World;
 module.exports.getDriver = getDriver;

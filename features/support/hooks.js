@@ -22,14 +22,14 @@ var myHooks = function () {
 
   this.registerHandler('AfterFeatures', function () {
 
-    // var options = {
-    //   theme: 'simple',
-    //   jsonFile: '../home/test.json',
-    //   output: 'home/test.html',
-    //   reportSuiteAsScenarios: true,
-    //   launchReport: true,
-    // };
-    // reporter.generate(options);
+  //   var options = {
+  //     theme: 'simple',
+  //     jsonFile: '/home/prdxn52/selelnium-phase-2/PRDXN-ITTT/report/test.json',
+  //     output: '/home/prdxn52/selelnium-phase-2/PRDXN-ITTT/report/test.html',
+  //     reportSuiteAsScenarios: true,
+  //     launchReport: true,
+  //   };
+  //   reporter.generate(options);
 
   return driver.quit();
 });
