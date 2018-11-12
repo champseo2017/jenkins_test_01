@@ -10,7 +10,7 @@ module.exports = function() {
 	});
 
 	this.Then(/^I click the button$/, function () {
-		this.driver.findElement({ name: 'btnK' }).then(function(ele){
+		this.driver.findElement({ name: 'btn' }).then(function(ele){
 			var click = ele.click();
 		});
 		this.driver.sleep(55000);
