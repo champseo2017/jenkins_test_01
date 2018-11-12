@@ -13,6 +13,6 @@ module.exports = function() {
 		this.driver.findElement({ name: 'btnK' }).then(function(ele){
 			var click = ele.click();
 		});
-		this.driver.sleep(1000);
+		this.driver.sleep(55000);
 	});
 };
